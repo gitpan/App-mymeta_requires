@@ -1,0 +1,48 @@
+---
+abstract: 'Extract module requirements from MYMETA files'
+author:
+  - 'David Golden <dagolden@cpan.org>'
+build_requires:
+  Capture::Tiny: 0
+  File::Find: 0
+  File::Spec::Functions: 0
+  File::Temp: 0
+  Test::Deep: 0
+  Test::More: 0.92
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.200012, CPAN::Meta::Converter version 2.110930'
+license: apache
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: App-mymeta_requires
+no_index:
+  directory:
+    - t
+    - xt
+    - examples
+    - corpus
+  package:
+    - DB
+provides:
+  App::mymeta_requires:
+    file: lib/App/mymeta_requires.pm
+    version: 0.001
+requires:
+  CPAN::Meta: 0
+  Class::Load: 0
+  File::Basename: 0
+  Getopt::Lucid: 0
+  Log::Dispatchouli: 0
+  Object::Tiny: 0
+  Pod::Usage: 0
+  Version::Requirements: 0
+  autodie: 2.00
+  perl: 5.010
+resources:
+  bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=App-mymeta_requires
+  homepage: http://github.com/dagolden/app-mymeta_requires
+  repository: http://github.com/dagolden/app-mymeta_requires
+version: 0.001
