@@ -4,7 +4,7 @@
       "David Golden <dagolden@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.200012, CPAN::Meta::Converter version 2.110930",
+   "generated_by" : "Dist::Zilla version 4.200007, CPAN::Meta::Converter version 2.110930",
    "license" : [
       "apache_2_0"
    ],
@@ -50,6 +50,7 @@
             "File::Find" : 0,
             "File::Spec::Functions" : 0,
             "File::Temp" : 0,
+            "File::pushd" : 0,
             "Test::Deep" : 0,
             "Test::More" : "0.92"
          }
@@ -58,7 +59,7 @@
    "provides" : {
       "App::mymeta_requires" : {
          "file" : "lib/App/mymeta_requires.pm",
-         "version" : "0.001"
+         "version" : "0.002"
       }
    },
    "release_status" : "stable",
@@ -74,6 +75,6 @@
          "web" : "http://github.com/dagolden/app-mymeta_requires"
       }
    },
-   "version" : "0.001"
+   "version" : "0.002"
 }
 

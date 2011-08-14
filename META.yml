@@ -7,12 +7,13 @@ build_requires:
   File::Find: 0
   File::Spec::Functions: 0
   File::Temp: 0
+  File::pushd: 0
   Test::Deep: 0
   Test::More: 0.92
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.200012, CPAN::Meta::Converter version 2.110930'
+generated_by: 'Dist::Zilla version 4.200007, CPAN::Meta::Converter version 2.110930'
 license: apache
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -29,7 +30,7 @@ no_index:
 provides:
   App::mymeta_requires:
     file: lib/App/mymeta_requires.pm
-    version: 0.001
+    version: 0.002
 requires:
   CPAN::Meta: 0
   Class::Load: 0
@@ -45,4 +46,4 @@ resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=App-mymeta_requires
   homepage: http://github.com/dagolden/app-mymeta_requires
   repository: http://github.com/dagolden/app-mymeta_requires
-version: 0.001
+version: 0.002

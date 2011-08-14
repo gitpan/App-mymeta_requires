@@ -12,6 +12,8 @@ lib/App/mymeta_requires.pm
 perlcritic.rc
 t/00-compile.t
 t/data/MYMETA.json
+t/data/metaonly/META.json
+t/metaonly.t
 t/requires.t
 xt/author/critic.t
 xt/release/distmeta.t
