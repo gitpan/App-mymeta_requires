@@ -4,7 +4,7 @@
       "David Golden <dagolden@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.200007, CPAN::Meta::Converter version 2.110930",
+   "generated_by" : "Dist::Zilla version 4.300009, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "apache_2_0"
    ],
@@ -32,26 +32,28 @@
       },
       "runtime" : {
          "requires" : {
-            "CPAN::Meta" : 0,
-            "Class::Load" : 0,
-            "File::Basename" : 0,
-            "Getopt::Lucid" : 0,
-            "Log::Dispatchouli" : 0,
-            "Object::Tiny" : 0,
-            "Pod::Usage" : 0,
-            "Version::Requirements" : 0,
+            "CPAN::Meta" : "0",
+            "CPAN::Meta::Requirements" : "0",
+            "Class::Load" : "0",
+            "File::Basename" : "0",
+            "Getopt::Lucid" : "0",
+            "Log::Dispatchouli" : "0",
+            "Object::Tiny" : "0",
+            "Pod::Usage" : "0",
             "autodie" : "2.00",
-            "perl" : "5.010"
+            "perl" : "5.010",
+            "strict" : "0",
+            "warnings" : "0"
          }
       },
       "test" : {
          "requires" : {
-            "Capture::Tiny" : 0,
-            "File::Find" : 0,
-            "File::Spec::Functions" : 0,
-            "File::Temp" : 0,
-            "File::pushd" : 0,
-            "Test::Deep" : 0,
+            "Capture::Tiny" : "0",
+            "File::Find" : "0",
+            "File::Spec::Functions" : "0",
+            "File::Temp" : "0",
+            "File::pushd" : "0",
+            "Test::Deep" : "0",
             "Test::More" : "0.92"
          }
       }
@@ -59,7 +61,7 @@
    "provides" : {
       "App::mymeta_requires" : {
          "file" : "lib/App/mymeta_requires.pm",
-         "version" : "0.002"
+         "version" : "0.003"
       }
    },
    "release_status" : "stable",
@@ -68,13 +70,13 @@
          "mailto" : "bug-app-mymeta_requires at rt.cpan.org",
          "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=App-mymeta_requires"
       },
-      "homepage" : "http://github.com/dagolden/app-mymeta_requires",
+      "homepage" : "https://github.com/dagolden/app-mymeta_requires",
       "repository" : {
          "type" : "git",
-         "url" : "http://github.com/dagolden/app-mymeta_requires",
-         "web" : "http://github.com/dagolden/app-mymeta_requires"
+         "url" : "https://github.com/dagolden/app-mymeta_requires.git",
+         "web" : "https://github.com/dagolden/app-mymeta_requires"
       }
    },
-   "version" : "0.002"
+   "version" : "0.003"
 }
 

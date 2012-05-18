@@ -3,7 +3,8 @@ use strict;
 use warnings;
 
 package App::mymeta_requires;
-our $VERSION = '0.002'; # VERSION
+# ABSTRACT: Extract module requirements from MYMETA files
+our $VERSION = '0.003'; # VERSION
 
 # Dependencies
 use autodie 2.00;
@@ -12,7 +13,7 @@ use CPAN::Meta;
 use Log::Dispatchouli;
 use Getopt::Lucid ':all';
 use Object::Tiny qw/opt logger/;
-use Version::Requirements;
+use CPAN::Meta::Requirements;
 
 my $opt_spec = [
   Param("file|f"),
@@ -78,7 +79,7 @@ sub load_mymeta {
 
 sub merge_prereqs {
   my ($self, $prereqs) = @_;
-  my $merged = Version::Requirements->new;
+  my $merged = CPAN::Meta::Requirements->new;
   for my $phase (qw(configure runtime build test develop)) {
     my $get_p = "get_$phase";
     next unless $self->opt->$get_p;
@@ -110,8 +111,6 @@ sub find_missing {
 
 1;
 
-# ABSTRACT: Extract module requirements from MYMETA files
-
 
 # vim: ts=2 sts=2 sw=2 et:
 
@@ -124,7 +123,7 @@ App::mymeta_requires - Extract module requirements from MYMETA files
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
@@ -144,24 +143,24 @@ new
 opt
 run
 
-=for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders
+=for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders metacpan
 
 =head1 SUPPORT
 
 =head2 Bugs / Feature Requests
 
-Please report any bugs or feature requests by email to C<bug-app-mymeta_requires at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/Public/Dist/Display.html?Name=App-mymeta_requires>. You will be automatically notified of any
-progress on the request by the system.
+Please report any bugs or feature requests through the issue tracker
+at L<http://rt.cpan.org/Public/Dist/Display.html?Name=App-mymeta_requires>.
+You will be notified automatically of any progress on your issue.
 
 =head2 Source Code
 
 This is open source software.  The code repository is available for
 public review and contribution under the terms of the license.
 
-L<http://github.com/dagolden/app-mymeta_requires>
+L<https://github.com/dagolden/app-mymeta_requires>
 
-  git clone http://github.com/dagolden/app-mymeta_requires
+  git clone https://github.com/dagolden/app-mymeta_requires.git
 
 =head1 AUTHOR
 
