@@ -1,3 +1,4 @@
+CONTRIBUTING
 Changes
 LICENSE
 MANIFEST
@@ -5,12 +6,12 @@ META.json
 META.yml
 Makefile.PL
 README
-README.PATCHING
 bin/mymeta-requires
 dist.ini
 lib/App/mymeta_requires.pm
 perlcritic.rc
 t/00-compile.t
+t/00-report-prereqs.t
 t/data/MYMETA.json
 t/data/metaonly/META.json
 t/metaonly.t
@@ -18,6 +19,7 @@ t/requires.t
 xt/author/critic.t
 xt/author/pod-spell.t
 xt/release/distmeta.t
+xt/release/minimum-version.t
 xt/release/pod-coverage.t
 xt/release/pod-syntax.t
 xt/release/portability.t

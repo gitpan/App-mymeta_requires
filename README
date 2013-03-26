@@ -2,7 +2,7 @@ NAME
     App::mymeta_requires - Extract module requirements from MYMETA files
 
 VERSION
-    version 0.003
+    version 0.004
 
 SYNOPSIS
        use App::mymeta_requires;
@@ -15,8 +15,8 @@ DESCRIPTION
 SUPPORT
   Bugs / Feature Requests
     Please report any bugs or feature requests through the issue tracker at
-    <http://rt.cpan.org/Public/Dist/Display.html?Name=App-mymeta_requires>.
-    You will be notified automatically of any progress on your issue.
+    <https://github.com/dagolden/app-mymeta_requires/issues>. You will be
+    notified automatically of any progress on your issue.
 
   Source Code
     This is open source software. The code repository is available for
@@ -24,7 +24,7 @@ SUPPORT
 
     <https://github.com/dagolden/app-mymeta_requires>
 
-      git clone https://github.com/dagolden/app-mymeta_requires.git
+      git clone git://github.com/dagolden/app-mymeta_requires.git
 
 AUTHOR
     David Golden <dagolden@cpan.org>

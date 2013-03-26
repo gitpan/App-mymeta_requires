@@ -3,7 +3,7 @@ use 5.010;
 use strict;
 use warnings;
 package mymeta_requires;
-our $VERSION = '0.003'; # VERSION
+our $VERSION = '0.004'; # VERSION
 
 use strict;
 use warnings;
@@ -17,6 +17,7 @@ exit App::mymeta_requires->run;
 # vim: ts=2 sts=2 sw=2 et:
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -25,7 +26,7 @@ mymeta-requires - Extract module requirements from MYMETA files
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 SYNOPSIS
 
@@ -102,4 +103,3 @@ This is free software, licensed under:
   The Apache License, Version 2.0, January 2004
 
 =cut
-
