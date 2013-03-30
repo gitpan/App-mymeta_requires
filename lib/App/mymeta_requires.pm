@@ -4,7 +4,7 @@ use warnings;
 
 package App::mymeta_requires;
 # ABSTRACT: Extract module requirements from MYMETA files
-our $VERSION = '0.004'; # VERSION
+our $VERSION = '0.005'; # VERSION
 
 # Dependencies
 use autodie 2.00;
@@ -99,6 +99,7 @@ sub find_missing {
   my ($self, $prereqs) = @_;
   my @missing;
   for my $mod ( $prereqs->required_modules ) {
+    next if $mod eq 'perl';
     if ( try_load_class($mod) ) {
       push @missing, $mod unless $prereqs->accepts_module($mod, $mod->VERSION);
     }
@@ -118,13 +119,15 @@ __END__
 
 =pod
 
+=encoding utf-8
+
 =head1 NAME
 
 App::mymeta_requires - Extract module requirements from MYMETA files
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 SYNOPSIS
 

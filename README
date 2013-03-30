@@ -2,7 +2,7 @@ NAME
     App::mymeta_requires - Extract module requirements from MYMETA files
 
 VERSION
-    version 0.004
+    version 0.005
 
 SYNOPSIS
        use App::mymeta_requires;
